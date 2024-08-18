@@ -23,7 +23,7 @@ const config: ThemeConfig = {
   },
 };
 
-const withTheme = (node: ReactElement) => {
+const WithTheme = ({ children }: { children: ReactElement }) => {
   const { theme } = useChatStore();
 
   const [isDarkMode, setIsDarkMode] = useState<null | boolean>(null);
@@ -59,7 +59,7 @@ const withTheme = (node: ReactElement) => {
       theme={deepMerge(config, isDarkMode ? darkTheme : lightTheme)}
     >
       {isDarkMode !== null ? (
-        node
+        children
       ) : (
         <Layout style={{ height: "100%", background: "white" }}>
           <Flex style={{ height: "100%" }} justify={"center"} align={"center"}>
@@ -71,4 +71,4 @@ const withTheme = (node: ReactElement) => {
   );
 };
 
-export default withTheme;
+export default WithTheme;

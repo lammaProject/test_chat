@@ -12,7 +12,7 @@ import styles from "../../../../../../../styles/Chat.module.css";
 import { useChat } from "@/app/(Chat)/chat/_hooks/useChat";
 import { motion } from "framer-motion";
 import { Flex, Image, Typography } from "antd";
-import { Message } from "@/store/store";
+import { Message } from "@/types/chat";
 
 const MessageItem = ({ message }: { message: Message }) => {
   const { updateMessage, deleteMessage } = useChat();
@@ -128,7 +128,7 @@ const MessageItem = ({ message }: { message: Message }) => {
                   onClick={handleDeleteImage}
                 />
               )}
-              <Image src={message.image} />
+              <Image alt={"addImage"} src={message.image} />
             </>
           )}
 
