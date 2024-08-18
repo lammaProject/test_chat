@@ -1,0 +1,33 @@
+{
+  "name": "test_chat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "@ant-design/nextjs-registry": "^1.0.1",
+    "antd": "^5.20.1",
+    "dayjs": "^1.11.12",
+    "framer-motion": "^11.3.28",
+    "google-fonts": "^1.0.0",
+    "next": "14.2.5",
+    "next-themes": "^0.3.0",
+    "nextjs-toploader": "^1.6.12",
+    "react": "^18",
+    "react-dom": "^18",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "typescript": "^5"
+  }
+}
