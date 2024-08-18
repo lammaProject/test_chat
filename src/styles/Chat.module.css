@@ -1,0 +1,84 @@
+.status {
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.statusOnline {
+    background-color: #34C759;
+}
+
+.statusOffline {
+    background-color: #710b24;
+}
+
+.messageItem {
+    display: flex;
+    position: relative;
+    padding: 0 20px 0 0;
+}
+
+.userMessage {
+    align-self: flex-end;
+}
+
+.botMessage {
+    align-self: flex-start;
+}
+
+.message {
+    position: relative;
+    margin-top: 2px;
+    padding: 4px 8px 4px 6px;
+    background: #F2F2F7;
+}
+
+.messageLeft {
+    width: 0;
+    height: 0;
+    border-left: 14.9px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 10px solid #F2F2F7;
+    position: absolute;
+    transform: rotate(-140deg);
+    top: 0;
+    left: -13px;
+}
+
+.messageRight {
+    width: 0;
+    height: 0;
+    border-left: 14.9px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 10px solid #007AFF;
+    position: absolute;
+    transform: rotate(145deg);
+    top: -2px;
+    right: -13px;
+}
+
+.input {
+    color: #2C2C2E !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    &:focus {color: red}
+}
+
+.input::placeholder {
+    color: #666668 !important;
+}
+
+.icon {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+ &:hover {
+     opacity: 0.7;
+     transition: all .3s ease-in-out;
+ }
+}
